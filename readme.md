@@ -21,6 +21,9 @@ Artist resources can be updated by putting a json payload to any artist endpoint
 A successful PUT will result in a 200 response. (The service does not actually
 persist... Just provides an endpoint to interact with.)
 
+
+## Test instructions
+
 Write a test-driven Discography JQuery plugin
 
 <ol>
