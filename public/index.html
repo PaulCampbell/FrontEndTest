@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+	<h1>
+        Artists web service
+	</h1>
+        <p>
+            a json webservice can be found: <br><br>
+            <a href="/api/v1/artists.json">/api/v1/artists.json</a>
+
+        </p>
+<p>The service supports jsonp by making a request to any endpoint with a callback query string parameter:
+    <br><br>
+   <a href="/api/v1/artists.json?callback=MyCallback">/api/v1/artists.json?callback=MyCallback</a>
+</p>
+
+    <p>
+        Artist resources can be updated by putting a json payload to the artist endpoint:
+
+        PUT: /api/v1/artists/1.json
+        <br>
+        <br>
+        A successful PUT will result in a 200 response.
+    </p>
+
+    <h2>Write a test-driven Discography JQuery plugin</h2>
+    <ol>
+        <li> Use the data published here: http://pcampbellem-test.nodejitsu.com/api/v1/artists.json<br/>
+            When loaded, the plugin should render a clickable list of artist names</li>
+        <li> A user should be able edit the list by adding wikipedia URLs for each artist. <br/>
+            (The service will not persist the update immediately, but the app should be capable of making PUT update requests)</li>
+        <li> When an artist name link is clicked then the list of albums for that artist should be displayed</li>
+    </ol>
+</body>
+</html>
